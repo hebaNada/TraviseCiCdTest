@@ -17,6 +17,8 @@ deploy:
   provider: releases
   skip_cleanup: true
   overwrite: true
+api_key:
+    secure:ElCaUMt2Z5TiHelUmfPtJNs6EVfBYOvm9MATz1q9Lgpjpz3tJTVJddsVeHZSF6DzMVs+obimEUglvmMiZMtAEjlJGnsIWUFH7p4v38jFTtIjh+50F3JxI0axPAlHa2itdHRTYvKu+0z7pFO+073QqrawxLReXKBU3AKPHHIqqizm/3UmnaB9kr7Zb1UCpQUOKbmrwUekwu4q6AphNlmURESblMm3Tt7RP6NfQI5sqU7ct0/mp9qkPAqwNvMSsmqUWkccRc8Esw19dMtcHClgXClEvCoVFFJ+wL6mczV8IzdTwAzwQsLOltZCpOOzEnBT4Kc2egWUZNxvOrgpjklS0FMIKcHiDnZT2wD6hSJuKn9th+LJ5rCcuVUqD//i71nB+wcK1YCo2i9bj5lFJxbXVexLbh2JsHZhX3V2yBxWOekFJplZ19zlh43wB/6phYljGiHdRA9gfuo0L6XOyJJzX0AD0BSxqtdZ0zrqvPk3445/w9Pgb1/lYg25EXWr2/vsfd8rGghBjOwEXXOrz+tOSjWk8tVzwe8ybxWc9iP/EpJOO2mhlYYD9l/GTmYpTc6EU3usTa1HJliQDECAzOo7X+/UGA/w9x1437+9NwwvT8ppIH1XP3Qpmy5zsVITMqWCg9NLf6IwhSicOkK2x/lCAT3UHhH9ZRcm4b/pxDBFrig=
   file_glob: true
   file: "/Users/shourasoftmac/Downloads/TraviseCiCdTest/app/build/outputs/apk/release/*"
   on:
