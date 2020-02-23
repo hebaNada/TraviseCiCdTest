@@ -27,4 +27,3 @@ deploy:
   on:
     repo: hebaNada/TraviseCiCdTest
     tags: false
-    all_branches: true
