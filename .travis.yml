@@ -23,4 +23,4 @@ deploy:
   file: /Users/shourasoftmac/Downloads/TraviseCiCdTest/app/build/outputs/apk/release/*
   on:
     repo: hebaNada/TraviseCiCdTest
-    tags: true
+    tags: false
