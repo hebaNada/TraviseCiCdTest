@@ -1,25 +1,26 @@
 language: android
 android:
   components:
-    - android-29
-    - build-tools-29.0.2
-
+  - android-29
+  - build-tools-29.0.2
 env:
   global:
-   # install timeout in minutes (2 minutes by default)
-    - ADB_INSTALL_TIMEOUT=8
-
-# Run assemble and unit tests
+  - ADB_INSTALL_TIMEOUT=8
 script:
-  - ./gradlew clean assembleDebug assembleRelease testDebug
+- "./gradlew clean assembleDebug assembleRelease testDebug"
+
+before_install:
+- openssl aes-256-cbc -K $encrypted_6fa16f9363b5_key -iv $encrypted_6fa16f9363b5_iv
+  -in OurStore.keystore.enc -out OurStore.keystore -d
 
 deploy:
   provider: releases
-  api_key:
-    secure: "w6icrhYz89kR7WW1FlXCZA"
-  file: "/Users/shourasoftmac/Downloads/TraviseCiCdTest/build/outputs/apk/TraviseCiCdTest.apk"
-  file_glob: "true"
   skip_cleanup: true
+  overwrite: true
+  user: "heba@shourasoft.com"
+  password: "305MAAMOONmaamoon"
+  file_glob: true
+  file: /Users/shourasoftmac/Downloads/TraviseCiCdTest/app/build/outputs/apk/release/*
   on:
-    branch: master
     repo: hebaNada/TraviseCiCdTest
+    tags: true
