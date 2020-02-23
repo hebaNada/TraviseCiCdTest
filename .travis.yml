@@ -6,7 +6,7 @@ android:
 env:
   global:
   - ADB_INSTALL_TIMEOUT=8
-  - secure: Mu0J6P9JDIBTFJxNGosxdcMxDNHNpPmBHyV9z0879SXMuw/0vBIQoHQmXxAj+xxBunomi7bczhQ97ooEqlsm0ZnFF79Xs0vy5AXqzhW/0AG1OXFpy9ZOEPN/Hc26M/Oek283KxVVVN/5SZ4WBVcJ+EzBHw8M7eV2D4rUlFFYh+lRcpFo7RVjJV0+JkGsidLsEbkv7l14CC2aeKXDocNhCHv5PaXGa1x5dGAEEjQysTbGaFU/60nSqS9w4KJ6blhMjZWBRRYBF5IGXRooToxRTWV5z24XeNH8yNkB0U/jOwSjphgc++vceTW7hoy/yae6H+cJikb7lfHrBhGrGqayv7YJujcSxX4QTM5Bj9oLkOwtuT7ME3yocuMTK4+Gau0uT62VkgQl1aNwFCTQ5q2Ipw+KZRH+SOFTZfNh+04ijErIQODzAJty4dRmqzB6o4EnU21qSfOm/h7nYv5MTRL9O9Zpjoav1Ynr3yFCplj36ZVxcjc7MAT7pvTsdZxRgHSBYW9/ciSNxbQ0QnnmydeN95KrNQW9uSbb+CxgZzsy3JJxrqTLbQ2sDIU5upRQ1bbX6RmxOstzyjVe3gBWGjBufRu2kepZXrnr1SNPj7rIHEI2IfxtAbpeFfdv/uZc+8WtWnfWVQyfpeagofXnFO9fWVQpausbdZdmt+qxLXSDOw0=
+
 script:
 - "./gradlew clean assembleDebug assembleRelease testDebug"
 before_install:
@@ -17,10 +17,13 @@ deploy:
   provider: releases
   skip_cleanup: true
   overwrite: true
-api_key:
+  api_key:
     secure: ElCaUMt2Z5TiHelUmfPtJNs6EVfBYOvm9MATz1q9Lgpjpz3tJTVJddsVeHZSF6DzMVs+obimEUglvmMiZMtAEjlJGnsIWUFH7p4v38jFTtIjh+50F3JxI0axPAlHa2itdHRTYvKu+0z7pFO+073QqrawxLReXKBU3AKPHHIqqizm/3UmnaB9kr7Zb1UCpQUOKbmrwUekwu4q6AphNlmURESblMm3Tt7RP6NfQI5sqU7ct0/mp9qkPAqwNvMSsmqUWkccRc8Esw19dMtcHClgXClEvCoVFFJ+wL6mczV8IzdTwAzwQsLOltZCpOOzEnBT4Kc2egWUZNxvOrgpjklS0FMIKcHiDnZT2wD6hSJuKn9th+LJ5rCcuVUqD//i71nB+wcK1YCo2i9bj5lFJxbXVexLbh2JsHZhX3V2yBxWOekFJplZ19zlh43wB/6phYljGiHdRA9gfuo0L6XOyJJzX0AD0BSxqtdZ0zrqvPk3445/w9Pgb1/lYg25EXWr2/vsfd8rGghBjOwEXXOrz+tOSjWk8tVzwe8ybxWc9iP/EpJOO2mhlYYD9l/GTmYpTc6EU3usTa1HJliQDECAzOo7X+/UGA/w9x1437+9NwwvT8ppIH1XP3Qpmy5zsVITMqWCg9NLf6IwhSicOkK2x/lCAT3UHhH9ZRcm4b/pxDBFrig=
+
   file_glob: true
-  file: "/Users/shourasoftmac/Downloads/TraviseCiCdTest/app/build/outputs/apk/release/*"
+
+  file: /home/travis/build/hebaNada/TraviseCiCdTest/app/build/outputs/apk/release/*
+
   on:
     repo: hebaNada/TraviseCiCdTest
-    tags: false
+    tags: true
