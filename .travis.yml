@@ -17,9 +17,9 @@ deploy:
   provider: releases
   skip_cleanup: true
   overwrite: true
-  user: "heba@shourasoft.com"
-  password: "305MAAMOONmaamoon"
-  file_glob: true
+  api_key:
+    secure: ee048298ee20799ab79e44ea6efd4751ce86ba7b
+  file_glob: true	
   file: /Users/shourasoftmac/Downloads/TraviseCiCdTest/app/build/outputs/apk/release/*
   on:
     repo: hebaNada/TraviseCiCdTest
