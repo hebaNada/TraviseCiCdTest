@@ -22,5 +22,5 @@ deploy:
   file_glob: true
   file: /home/travis/build/hebaNada/TraviseCiCdTest/app/build/outputs/apk/release/*
   on:
-    repo: ValCanBuild/TravisAndroidExample
-    tags: true
+    repo: hebaNada/TraviseCiCdTest
+    tags: false
