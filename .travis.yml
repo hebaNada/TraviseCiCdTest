@@ -20,7 +20,7 @@ deploy:
   api_key:
     secure: B9cQhiZtx3bXb3Lb1H9BbYGqYDfgkSVgnzwADLGzoWMiJsokL78sG35N0owWXL30M2TWKNwAPzInjof+Mj3GXGGbhG8Gy2Fx03s3+HAeNDJ00bR7Ilq9oRfjDNyAumFnr250g2E+1OSihpXuaqo2AtYBrMdqlXfNBw4wL/uaeJORO+sm8ChXWPAmEdIQwS/VB3avq9N+TwZVOSJqyCqN8NzAU69P5jfI2zbdHQQz5NKfhVzTh9KxpstCIdG8xDxXT+eWTp73LeU+6fne5ZcysLia7N2f4U89yZPXgRHZ+jYlK9RCP9kXrGaa4PPG8wK9FVTLR2P7q9k7Oqqie4ZLXl2uC7QWndZ0dzy702qLb5Jji1YvS/Z8ulZPb4OwPZH/KEbV/3NN9hEq0xArJIY2mA91mMf4/pYH/uwEL/s9X69DiGsvcOKGzD6IXcBc6+DqDBdSD7G0y3CzyyVsMCnNLN7e/cTS5GtObHmvNMvjaFPARU+x8EGb9IR0lA19sp0V8YrJIGXq83Sqs/fanWKHI/ca1Zwdpn22O/QTbDOmH6Ve2daRH8GEbPLen8OMQ68R3NugYcAtTIYkzcpkf6Kk2VWZyoAVkookiVKazU2I46ZL12HE3ubN3lZ/JTns+rbb+4JOkJcKqSs5jlwxy2agOS34nM0a9kZITI0O72o6q68=
   file_glob: true
-  file: /home/travis/build/hebaNada/TraviseCiCdTest/app/build/outputs/apk/release/*
+  file: /home/travis/build/hebaNada/TravisCICDTest2/app/build/outputs/apk/release/*
   on:
     repo: hebaNada/TravisCICDTest2
     tags: false
