@@ -25,5 +25,5 @@ deploy:
   file: /home/travis/build/hebaNada/TraviseCiCdTest/app/build/outputs/apk/release/*
   on:
     repo: hebaNada/TraviseCiCdTest
-    tags: false
+    tags: true
     all_branches: true
